@@ -1,6 +1,7 @@
 var utils = {};
 
 utils.each = require('./each');
+utils.event = require('./event');
 utils.map = require('./map');
 utils.mapobj = require('./mapobj');
 utils.match = require('./match');
