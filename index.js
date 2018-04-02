@@ -4,6 +4,7 @@ utils.each = require('./each');
 utils.map = require('./map');
 utils.mapobj = require('./mapobj');
 utils.match = require('./match');
+utils.merge = require('./merge');
 utils.obs = require('./obs');
 utils.y = require('./y');
 
