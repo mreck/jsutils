@@ -6,7 +6,7 @@ function each(obj, func) {
 	} else {
 		for (var key in obj) {
 			if (obj.hasOwnProperty(key)) {
-				func(obj[key]);
+				func(key, obj[key]);
 			}
 		}
 	}

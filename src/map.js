@@ -7,7 +7,7 @@ function map(obj, func) {
 	} else {
 		for (var key in obj) {
 			if (obj.hasOwnProperty(key)) {
-				res.push(func(obj[key]));
+				res.push(func(key, obj[key]));
 			}
 		}
 	}

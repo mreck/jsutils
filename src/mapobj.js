@@ -12,7 +12,7 @@ function mapobj(obj, func) {
 	} else {
 		for (var key in obj) {
 			if (obj.hasOwnProperty(key)) {
-				func(obj[key], push);
+				func(key, obj[key], push);
 			}
 		}
 	}
