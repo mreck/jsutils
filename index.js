@@ -9,6 +9,7 @@ utils.match = require('./src/match');
 utils.merge = require('./src/merge');
 utils.obs = require('./src/obs');
 utils.req = require('./src/req');
+utils.str = require('./src/str');
 utils.y = require('./src/y');
 
 module.exports = utils;
