@@ -1,5 +1,6 @@
 var utils = {};
 
+utils.arr = require('./src/arr');
 utils.each = require('./src/each');
 utils.event = require('./src/event');
 utils.keyListener = require('./src/keyListener');
