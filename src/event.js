@@ -5,7 +5,7 @@ class Emitter {
 	}
 	sub(ev, cb) {
 		if (!this._cb[ev]) {
-			this._cb[ev] = {};
+			this._cb[ev] = [];
 		}
 		this._cb[ev].push(cb);
 	}
@@ -35,13 +35,17 @@ class Emitter {
 			}
 		}
 		for (let i = 0; i < this._cb_all.length; i++) {
-			this._cb_all(ev, msg);
+			this._cb_all[i](ev, msg);
 		}
 	}
 }
 
+function emitter() {
+	return new Emitter();
+}
+
+emitter.Emitter = Emitter;
+
 module.exports = {
-	emitter: function () {
-		return new Emitter();
-	}
+	emitter: emitter,
 };
