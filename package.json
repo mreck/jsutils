@@ -1,6 +1,7 @@
 {
 	"name": "@mreck/jsutils",
-	"description": "My JavaScript utilities",
+	"description": "JavaScript utilities library",
+	"author": "Mathias Reck",
 	"license": "MIT",
 	"version": "1.6.0",
 	"main": "index.js",
