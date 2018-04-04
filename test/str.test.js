@@ -5,6 +5,21 @@ const str = require('../src/str');
 
 describe('str', function () {
 
+	describe('isStr', function () {
+
+		it('should return true if it\'s a string', function () {
+			expect(str.isStr('foo')).to.be.true;
+			expect(str.isStr(new String())).to.be.true;
+		});
+
+		it('should return false if it\'s not a string', function () {
+			expect(str.isStr(1)).to.be.false;
+			expect(str.isStr(true)).to.be.false;
+			expect(str.isStr([])).to.be.false;
+			expect(str.isStr({})).to.be.false;
+		});
+	});
+
 	describe('contains', function () {
 
 		it('should return true if the string contains the value', function () {

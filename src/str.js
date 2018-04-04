@@ -1,3 +1,7 @@
+function isStr(s) {
+	return typeof s === 'string' || s instanceof String;
+}
+
 function contains(s, val) {
 	return s.indexOf(val) > -1;
 }
@@ -21,6 +25,7 @@ function containsAll(s, ...val) {
 }
 
 module.exports = {
+	isStr,
 	contains,
 	containsAny,
 	containsAll,
