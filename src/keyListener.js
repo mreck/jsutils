@@ -23,7 +23,7 @@ const KEY_CODE = {
 class KeyListener {
 	constructor(node) {
 		this._emitter = event.emitter();
-		node.addEventListener('keypress', this._handler);
+		node.addEventListener('keypress', this._handler.bind(this));
 	}
 	_handler(ev) {
 		this._emitter.emit(ev.keyCode);
