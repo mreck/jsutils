@@ -3,7 +3,7 @@
 	"description": "JavaScript utilities library",
 	"author": "Mathias Reck",
 	"license": "MIT",
-	"version": "1.7.0",
+	"version": "1.7.1",
 	"main": "index.js",
 	"scripts": {
 		"test": "mocha",
