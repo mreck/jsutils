@@ -15,7 +15,7 @@ describe('each', function () {
 		let count = 0;
 		let test = '';
 
-		each({ a: 1, b: 2, c: 3 }, function (k, x) {
+		each({ a: 1, b: 2, c: 3 }, function (x, k) {
 			test += k;
 			count += x;
 		});

@@ -8,7 +8,7 @@ describe('mapobj', function () {
 	it('should handle arrays correctly', function () {
 		let count = 0;
 
-		const res = mapobj([1, 2, 3], function (x, push) {
+		const res = mapobj([1, 2, 3], function (x, i, push) {
 			count += x;
 			push(x, x * 2);
 		});
@@ -20,7 +20,7 @@ describe('mapobj', function () {
 	it('should handle objects correctly', function () {
 		let count = 0;
 
-		const res = mapobj({ a: 1, b: 2, c: 3 }, function (k, x, push) {
+		const res = mapobj({ a: 1, b: 2, c: 3 }, function (x, k, push) {
 			count += x;
 			push(k, x * 2);
 		});

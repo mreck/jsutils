@@ -7,12 +7,12 @@ function mapobj(obj, func) {
 
 	if (Array.isArray(obj)) {
 		for (var i = 0; i < obj.length; i++) {
-			func(obj[i], push);
+			func(obj[i], i, push);
 		}
 	} else {
 		for (var key in obj) {
 			if (obj.hasOwnProperty(key)) {
-				func(key, obj[key], push);
+				func(obj[key], key, push);
 			}
 		}
 	}

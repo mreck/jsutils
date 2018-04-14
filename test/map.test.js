@@ -21,7 +21,7 @@ describe('map', function () {
 		let count = 0;
 		let test = '';
 
-		const res = map({ a: 1, b: 2, c: 3 }, function (k, x) {
+		const res = map({ a: 1, b: 2, c: 3 }, function (x, k) {
 			test += k;
 			count += x;
 			return x * 2;
