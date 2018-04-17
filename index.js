@@ -13,6 +13,7 @@ utils.num = require('./src/num');
 utils.obs = require('./src/obs');
 utils.req = require('./src/req');
 utils.str = require('./src/str');
+utils.ws = require('./src/ws');
 utils.y = require('./src/y');
 
 module.exports = utils;
