@@ -31,6 +31,15 @@ describe('obs', function () {
 		expect(x.get()).to.equal(2);
 	});
 
+	it('should handle validate correctly', function () {
+		const x = obs(1);
+		x.validate(val => (val > 10 ? 10 : val));
+		x.set(12);
+		expect(x.get()).to.equal(10);
+		x.add(2);
+		expect(x.get()).to.equal(10);
+	});
+
 	it('should handle sub correctly', function () {
 		const x = obs();
 		const fn1 = function () { };
