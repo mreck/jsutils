@@ -23,6 +23,14 @@ describe('obs', function () {
 		expect(x.get()).to.equal(2);
 	});
 
+	it('should handle add correctly', function () {
+		const x = obs(1);
+		x.add(3);
+		expect(x.get()).to.equal(4);
+		x.add(-2);
+		expect(x.get()).to.equal(2);
+	});
+
 	it('should handle sub correctly', function () {
 		const x = obs();
 		const fn1 = function () { };

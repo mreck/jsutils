@@ -18,6 +18,12 @@ class Obs {
 			this._notify(old_val, new_val);
 		}
 	}
+	add(val) {
+		const old_val = this._val;
+		const new_val = this._val + val;
+		this._val = new_val;
+		this._notify(old_val, new_val);
+	}
 	sub(fn) {
 		this._fn.push(fn);
 	}
