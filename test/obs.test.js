@@ -72,7 +72,7 @@ describe('obs', function () {
 	it('should update correctly', function () {
 		let calls = 0;
 		const x = obs(1);
-		x.sub(function (ov, nv) {
+		x.sub(function (nv, ov) {
 			expect(ov).to.equal(1);
 			expect(nv).to.equal(2);
 			calls++;

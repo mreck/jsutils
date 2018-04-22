@@ -13,7 +13,7 @@ class Obs {
 			}
 		}
 		for (var i = 0; i < this._fn.length; i++) {
-			this._fn[i](old_val, new_val);
+			this._fn[i](new_val, old_val);
 		}
 	}
 	_validate(val) {
