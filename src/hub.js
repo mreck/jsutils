@@ -5,6 +5,13 @@ class Hub {
 		this._provided = {};
 	}
 	provide(key, val) {
+		if (this._provided[key]) {
+			return new Error('already provided: ' + key);
+		}
+
+		this._provided[key] = val;
+	}
+	provideOverride(key, val) {
 		this._provided[key] = val;
 	}
 	provideAll(obj) {
