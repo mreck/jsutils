@@ -14,6 +14,7 @@ utils.merge = require('./src/merge');
 utils.min = require('./src/min');
 utils.num = require('./src/num');
 utils.obs = require('./src/obs');
+utils.reduce = require('./src/reduce');
 utils.req = require('./src/req');
 utils.sanitizer = require('./src/sanitizer');
 utils.str = require('./src/str');
