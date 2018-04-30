@@ -16,9 +16,9 @@ utils.num = require('./src/num');
 utils.obs = require('./src/obs');
 utils.reduce = require('./src/reduce');
 utils.req = require('./src/req');
-utils.sanitizer = require('./src/sanitizer');
+utils.sanitize = require('./src/sanitize');
 utils.str = require('./src/str');
-utils.validator = require('./src/validator');
+utils.validate = require('./src/validate');
 utils.ws = require('./src/ws');
 utils.y = require('./src/y');
 
