@@ -15,3 +15,10 @@ $ npm i --save @mreck/jsutils
 
 Because most of the time I don't need what full JS libraries provide; I only need some of the simpler stuff. 
 So here it is.
+
+## TODO
+
+- [ ] Auto generated documentation
+- [ ] Browser-ready bundles
+- [ ] Unit tests for DOM changes
+- [ ] Unit tests for Ajax calls
