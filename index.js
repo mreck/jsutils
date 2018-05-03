@@ -6,6 +6,7 @@ utils.dom = require('./src/dom');
 utils.each = require('./src/each');
 utils.event = require('./src/event');
 utils.hub = require('./src/hub');
+utils.keyedArray = require('./src/keyedArray');
 utils.keyListener = require('./src/keyListener');
 utils.map = require('./src/map');
 utils.mapobj = require('./src/mapobj');
