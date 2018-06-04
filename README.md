@@ -11,6 +11,10 @@ The library is designed not to have any dependencies.
 $ npm i --save @mreck/jsutils
 ```
 
+```shell
+$ yarn add @mreck/jsutils
+```
+
 ## Why?
 
 Because most of the time I don't need what full JS libraries provide; I only need some of the simpler stuff. 
