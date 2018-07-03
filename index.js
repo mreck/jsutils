@@ -13,6 +13,7 @@ utils.max = require('./src/max');
 utils.merge = require('./src/merge');
 utils.min = require('./src/min');
 utils.num = require('./src/num');
+utils.objpath = require('./src/objpath');
 utils.obs = require('./src/obs');
 utils.reduce = require('./src/reduce');
 utils.req = require('./src/req');
