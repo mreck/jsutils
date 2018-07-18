@@ -1,5 +1,6 @@
 var utils = {};
 
+utils.$ = require('./src/$');
 utils.arr = require('./src/arr');
 utils.clamp = require('./src/clamp');
 utils.dom = require('./src/dom');
