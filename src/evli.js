@@ -1,5 +1,14 @@
+const $ = require('./$');
+const isStr = require('./str').isStr;
+
 function evli(target, event, fn) {
-	if (!target) target = document;
+	if (!target) {
+		target = document;
+	}
+	if (isStr(target)) {
+		target = $(target);
+		if (!target) return null;
+	}
 	target.addEventListener(event, fn);
 	return {
 		remove: () => target.removeEventListener(event, fn),
