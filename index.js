@@ -6,6 +6,7 @@ utils.clamp = require('./src/clamp');
 utils.dom = require('./src/dom');
 utils.each = require('./src/each');
 utils.event = require('./src/event');
+utils.evli = require('./src/evli');
 utils.hub = require('./src/hub');
 utils.keyedArray = require('./src/keyedArray');
 utils.keyListener = require('./src/keyListener');
