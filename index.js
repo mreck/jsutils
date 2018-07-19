@@ -23,6 +23,7 @@ utils.obs = require('./src/obs');
 utils.reduce = require('./src/reduce');
 utils.req = require('./src/req');
 utils.sanitize = require('./src/sanitize');
+utils.sort = require('./src/sort');
 utils.str = require('./src/str');
 utils.validate = require('./src/validate');
 utils.ws = require('./src/ws');
