@@ -25,6 +25,7 @@ utils.req = require('./src/req');
 utils.sanitize = require('./src/sanitize');
 utils.sort = require('./src/sort');
 utils.str = require('./src/str');
+utils.uniq = require('./src/uniq');
 utils.validate = require('./src/validate');
 utils.ws = require('./src/ws');
 utils.y = require('./src/y');
