@@ -1,6 +1,5 @@
-function isNum(n) {
-	return (typeof n === 'number') && !isNaN(parseFloat(n)) && isFinite(n);
-}
+// TODO: remove for the next major version
+const isNum = require('./is').number;
 
 module.exports = {
 	isNum,

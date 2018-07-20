@@ -1,5 +1,7 @@
+const isArray = require('./is').array;
+
 function ensure(val) {
-	return Array.isArray(val) ? val : [val];
+	return isArray(val) ? val : [val];
 }
 
 module.exports = {

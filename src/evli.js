@@ -1,11 +1,11 @@
 const $ = require('./$');
-const isStr = require('./str').isStr;
+const isString = require('./is').string;
 
 function evli(target, event, fn) {
 	if (!target) {
 		target = document;
 	}
-	if (isStr(target)) {
+	if (isString(target)) {
 		target = $(target);
 		if (!target) return null;
 	}

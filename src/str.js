@@ -1,6 +1,5 @@
-function isStr(s) {
-	return typeof s === 'string' || s instanceof String;
-}
+// TODO: remote for the next major version
+const isStr = require('./is').string;
 
 function contains(s, val) {
 	return s.indexOf(val) > -1;

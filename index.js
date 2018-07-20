@@ -8,6 +8,7 @@ utils.each = require('./src/each');
 utils.event = require('./src/event');
 utils.evli = require('./src/evli');
 utils.hub = require('./src/hub');
+utils.is = require('./src/is');
 utils.keyCode = require('./src/keyCode');
 utils.keyedArray = require('./src/keyedArray');
 utils.keyListener = require('./src/keyListener');
