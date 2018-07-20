@@ -1,7 +1,7 @@
-const u_str = require('./str');
+const isString = require('./is').string;
 
 function updateInputs(root, values) {
-	const node = u_str.isStr(root) ? document.querySelector(root) : root;
+	const node = isString(root) ? document.querySelector(root) : root;
 	const inputs = node.querySelectorAll('input');
 
 	for (var i = 0; i < inputs.length; i++) {
@@ -22,7 +22,7 @@ function updateInputs(root, values) {
 }
 
 function parseInputs(root) {
-	const node = u_str.isStr(root) ? document.querySelector(root) : root;
+	const node = isString(root) ? document.querySelector(root) : root;
 	const inputs = node.querySelectorAll('input');
 
 	const values = {};

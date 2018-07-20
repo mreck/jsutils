@@ -21,7 +21,9 @@ function create(node) {
 	return new KeyListener(node || document);
 }
 
+// TODO: remove for the next major version
 create.CODE = keyCode;
+
 create.KeyListener = KeyListener;
 
 module.exports = create;
