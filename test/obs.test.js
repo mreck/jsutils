@@ -1,7 +1,7 @@
 /* eslint-env mocha */
 
 const expect = require('chai').expect;
-const obs = require('../src/obs');
+const obs = require('../lib/obs');
 
 describe('obs', function () {
 

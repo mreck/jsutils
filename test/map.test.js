@@ -1,7 +1,7 @@
 /* eslint-env mocha */
 
 const expect = require('chai').expect;
-const map = require('../src/map');
+const map = require('../lib/map');
 
 describe('map', function () {
 

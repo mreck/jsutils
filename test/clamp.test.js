@@ -1,7 +1,7 @@
 /* eslint-env mocha */
 
 const expect = require('chai').expect;
-const clamp = require('../src/clamp');
+const clamp = require('../lib/clamp');
 
 describe('clamp', function () {
 

@@ -1,7 +1,7 @@
 /* eslint-env mocha */
 
 const expect = require('chai').expect;
-const mapobj = require('../src/mapobj');
+const mapobj = require('../lib/mapobj');
 
 describe('mapobj', function () {
 

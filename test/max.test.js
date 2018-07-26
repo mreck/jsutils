@@ -1,7 +1,7 @@
 /* eslint-env mocha */
 
 const expect = require('chai').expect;
-const max = require('../src/max');
+const max = require('../lib/max');
 
 describe('max', function () {
 

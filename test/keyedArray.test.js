@@ -1,7 +1,7 @@
 /* eslint-env mocha */
 
 const expect = require('chai').expect;
-const keyedArray = require('../src/keyedArray');
+const keyedArray = require('../lib/keyedArray');
 
 const D1 = { id: '1', val: 2, txt: 'msg 1' };
 const D2 = { id: '2', val: 3, txt: 'msg 2' };

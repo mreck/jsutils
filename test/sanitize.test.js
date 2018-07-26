@@ -1,7 +1,7 @@
 /* eslint-env mocha */
 
 const expect = require('chai').expect;
-const sanitize = require('../src/sanitize');
+const sanitize = require('../lib/sanitize');
 
 describe('sanitize', function () {
 

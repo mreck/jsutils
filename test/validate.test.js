@@ -1,7 +1,7 @@
 /* eslint-env mocha */
 
 const expect = require('chai').expect;
-const validate = require('../src/validate');
+const validate = require('../lib/validate');
 
 describe('validate', function () {
 

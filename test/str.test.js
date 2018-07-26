@@ -1,7 +1,7 @@
 /* eslint-env mocha */
 
 const expect = require('chai').expect;
-const str = require('../src/str');
+const str = require('../lib/str');
 
 describe('str', function () {
 

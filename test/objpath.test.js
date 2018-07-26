@@ -1,7 +1,7 @@
 /* eslint-env mocha */
 
 const expect = require('chai').expect;
-const objpath = require('../src/objpath');
+const objpath = require('../lib/objpath');
 
 describe('objpath', function () {
 

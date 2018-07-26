@@ -1,7 +1,7 @@
 /* eslint-env mocha */
 
 const expect = require('chai').expect;
-const each = require('../src/each');
+const each = require('../lib/each');
 
 describe('each', function () {
 

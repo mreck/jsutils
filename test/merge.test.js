@@ -1,7 +1,7 @@
 /* eslint-env mocha */
 
 const expect = require('chai').expect;
-const merge = require('../src/merge');
+const merge = require('../lib/merge');
 
 describe('merge', function () {
 
