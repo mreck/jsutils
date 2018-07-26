@@ -3,7 +3,7 @@
 	"description": "JavaScript utilities library",
 	"author": "Mathias Reck",
 	"license": "MIT",
-	"version": "3.8.0",
+	"version": "4.0.0",
 	"main": "dist/index.bundle.js",
 	"scripts": {
 		"build": "webpack --config webpack.prod.js",
