@@ -1,20 +1,20 @@
 /* eslint-env mocha */
 
 const expect = require('chai').expect;
-const arr = require('../lib/arr');
+const ensure = require('../lib/ensure');
 
-describe('arr', function () {
+describe('ensure', function () {
 
-	describe('ensure', function () {
+	describe('array', function () {
 
 		it('should just return an array', function () {
 			const a = [1, 2, 3];
-			expect(arr.ensure(a)).to.equal(a);
+			expect(ensure.array(a)).to.equal(a);
 		});
 
 		it('should return a value as an array', function () {
 			const a = 1;
-			expect(arr.ensure(a)).to.deep.equal([a]);
+			expect(ensure.array(a)).to.deep.equal([a]);
 		});
 	});
 

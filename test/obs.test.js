@@ -1,30 +1,30 @@
 /* eslint-env mocha */
 
 const expect = require('chai').expect;
-const obs = require('../lib/obs');
+const { create, Obs } = require('../lib/obs');
 
 describe('obs', function () {
 
 	it('should be created correctly', function () {
-		const x = obs(1);
+		const x = create(1);
 		expect(x._val).to.equal(1);
 		expect(x._fn).to.deep.equal([]);
-		expect(x instanceof obs.Obs).to.be.true;
+		expect(x instanceof Obs).to.be.true;
 	});
 
 	it('should handle get correctly', function () {
-		const x = obs(1);
+		const x = create(1);
 		expect(x.get()).to.equal(1);
 	});
 
 	it('should handle set correctly', function () {
-		const x = obs(1);
+		const x = create(1);
 		x.set(2);
 		expect(x.get()).to.equal(2);
 	});
 
 	it('should handle add correctly', function () {
-		const x = obs(1);
+		const x = create(1);
 		x.add(3);
 		expect(x.get()).to.equal(4);
 		x.add(-2);
@@ -32,7 +32,7 @@ describe('obs', function () {
 	});
 
 	it('should handle validate correctly', function () {
-		const x = obs(1);
+		const x = create(1);
 		x.validate(val => (val > 10 ? 10 : val));
 		x.set(12);
 		expect(x.get()).to.equal(10);
@@ -41,7 +41,7 @@ describe('obs', function () {
 	});
 
 	it('should handle sub correctly', function () {
-		const x = obs();
+		const x = create();
 		const fn1 = function () { };
 		x.sub(fn1);
 		expect(x._fn).to.deep.equal([fn1]);
@@ -51,7 +51,7 @@ describe('obs', function () {
 	});
 
 	it('should handle unsub correctly', function () {
-		const x = obs();
+		const x = create();
 		const fn1 = function () { };
 		const fn2 = function () { };
 		x.sub(fn1);
@@ -62,7 +62,7 @@ describe('obs', function () {
 
 	it('should handle notify correctly', function () {
 		let count = 0;
-		const x = obs();
+		const x = create();
 		x.sub(function (ov, nv) { count += (ov + nv + 1); });
 		x.sub(function (ov, nv) { count += (ov + nv + 3); });
 		x._notify(2, 4);
@@ -71,7 +71,7 @@ describe('obs', function () {
 
 	it('should update correctly', function () {
 		let calls = 0;
-		const x = obs(1);
+		const x = create(1);
 		x.sub(function (nv, ov) {
 			expect(ov).to.equal(1);
 			expect(nv).to.equal(2);

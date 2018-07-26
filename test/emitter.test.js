@@ -1,21 +1,21 @@
 /* eslint-env mocha */
 
 const expect = require('chai').expect;
-const event = require('../lib/event');
+const { create, Emitter } = require('../lib/emitter');
 
 describe('event', function () {
 
 	describe('emitter', function () {
 
 		it('should be created correctly', function () {
-			const eve = event.emitter();
+			const eve = create();
 			expect(eve._cb).to.deep.equal({});
 			expect(eve._cb_all).to.deep.equal([]);
-			expect(eve instanceof event.emitter.Emitter).to.be.true;
+			expect(eve instanceof Emitter).to.be.true;
 		});
 
 		it('should handle sub correctly', function () {
-			const eve = event.emitter();
+			const eve = create();
 
 			const fn1 = function () { };
 			const fn2 = function () { };
@@ -29,7 +29,7 @@ describe('event', function () {
 		});
 
 		it('should handle unsub correctly', function () {
-			const eve = event.emitter();
+			const eve = create();
 
 			const fn1 = function () { };
 			const fn2 = function () { };
@@ -49,7 +49,7 @@ describe('event', function () {
 		});
 
 		it('should handle sub_all correctly', function () {
-			const eve = event.emitter();
+			const eve = create();
 
 			const fn1 = function () { };
 			const fn2 = function () { };
@@ -62,7 +62,7 @@ describe('event', function () {
 		});
 
 		it('should handle unsub_all correctly', function () {
-			const eve = event.emitter();
+			const eve = create();
 
 			const fn1 = function () { };
 			const fn2 = function () { };
@@ -80,7 +80,7 @@ describe('event', function () {
 		});
 
 		it('should handle emit correctly', function () {
-			const eve = event.emitter();
+			const eve = create();
 
 			let called1 = 0;
 			let called2 = 0;

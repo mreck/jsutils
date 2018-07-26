@@ -8,6 +8,7 @@ module.exports = {
 	'rules': {
 		'indent': ['error', 'tab', { 'SwitchCase': 1 }],
 		'linebreak-style': ['error', 'unix'],
+		'no-var': ['error'],
 		'quotes': ['error', 'single'],
 		'semi': ['error', 'always'],
 	}
