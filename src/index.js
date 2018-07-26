@@ -1,0 +1,34 @@
+var utils = {};
+
+utils.$ = require('./$');
+utils.arr = require('./arr');
+utils.clamp = require('./clamp');
+utils.dom = require('./dom');
+utils.each = require('./each');
+utils.event = require('./event');
+utils.evli = require('./evli');
+utils.hub = require('./hub');
+utils.is = require('./is');
+utils.keyCode = require('./keyCode');
+utils.keyedArray = require('./keyedArray');
+utils.keyListener = require('./keyListener');
+utils.map = require('./map');
+utils.mapobj = require('./mapobj');
+utils.match = require('./match');
+utils.max = require('./max');
+utils.merge = require('./merge');
+utils.min = require('./min');
+utils.num = require('./num');
+utils.objpath = require('./objpath');
+utils.obs = require('./obs');
+utils.reduce = require('./reduce');
+utils.req = require('./req');
+utils.sanitize = require('./sanitize');
+utils.sort = require('./sort');
+utils.str = require('./str');
+utils.uniq = require('./uniq');
+utils.validate = require('./validate');
+utils.ws = require('./ws');
+utils.y = require('./y');
+
+module.exports = utils;
