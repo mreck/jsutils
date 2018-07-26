@@ -1,7 +1,7 @@
 /* eslint-env mocha */
 
 const expect = require('chai').expect;
-const reduce = require('../src/reduce');
+const reduce = require('../lib/reduce');
 
 describe('reduce', function () {
 

@@ -1,7 +1,7 @@
 /* eslint-env mocha */
 
 const expect = require('chai').expect;
-const sort = require('../src/sort');
+const sort = require('../lib/sort');
 
 function getObjArr() {
 	return [

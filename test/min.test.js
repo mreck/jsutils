@@ -1,7 +1,7 @@
 /* eslint-env mocha */
 
 const expect = require('chai').expect;
-const min = require('../src/min');
+const min = require('../lib/min');
 
 describe('min', function () {
 

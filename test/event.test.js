@@ -1,7 +1,7 @@
 /* eslint-env mocha */
 
 const expect = require('chai').expect;
-const event = require('../src/event');
+const event = require('../lib/event');
 
 describe('event', function () {
 

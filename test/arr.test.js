@@ -1,7 +1,7 @@
 /* eslint-env mocha */
 
 const expect = require('chai').expect;
-const arr = require('../src/arr');
+const arr = require('../lib/arr');
 
 describe('arr', function () {
 

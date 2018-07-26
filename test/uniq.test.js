@@ -1,7 +1,7 @@
 /* eslint-env mocha */
 
 const expect = require('chai').expect;
-const uniq = require('../src/uniq');
+const uniq = require('../lib/uniq');
 
 describe('uniq', function () {
 

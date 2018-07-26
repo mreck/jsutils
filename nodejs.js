@@ -1,9 +1,9 @@
 const utils = require('./src');
 
-utils.fsfiletree = require('./src/fsfiletree');
-utils.fsrdir = require('./src/fsrdir');
-utils.fsrjson = require('./src/fsrjson');
-utils.fswjson = require('./src/fswjson');
-utils.mkdir = require('./src/mkdir');
+utils.fsfiletree = require('./lib/fsfiletree');
+utils.fsrdir = require('./lib/fsrdir');
+utils.fsrjson = require('./lib/fsrjson');
+utils.fswjson = require('./lib/fswjson');
+utils.mkdir = require('./lib/mkdir');
 
 module.exports = utils;

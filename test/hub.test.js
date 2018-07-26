@@ -1,7 +1,7 @@
 /* eslint-env mocha */
 
 const expect = require('chai').expect;
-const hub = require('../src/hub');
+const hub = require('../lib/hub');
 
 describe('hub', function () {
 

@@ -1,5 +1,5 @@
 const config = require('./webpack.config');
-const merge = require('./src/merge');
+const merge = require('./lib/merge');
 
 module.exports = merge(config, {
 	mode: 'development',
