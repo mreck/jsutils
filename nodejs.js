@@ -1,4 +1,4 @@
-var utils = {};
+const utils = require('./src');
 
 utils.fsfiletree = require('./src/fsfiletree');
 utils.fsrdir = require('./src/fsrdir');
