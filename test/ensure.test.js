@@ -16,6 +16,9 @@ describe('ensure', function () {
 			const a = 1;
 			expect(ensure.array(a)).to.deep.equal([a]);
 		});
-	});
 
+		it('should return an empty array if no value is passed', function () {
+			expect(ensure.array()).to.deep.equal([]);
+		});
+	});
 });
