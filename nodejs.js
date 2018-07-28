@@ -1,4 +1,4 @@
-const utils = require('./src');
+const utils = require('./lib');
 
 utils.fsfiletree = require('./lib/fsfiletree');
 utils.fsrdir = require('./lib/fsrdir');
