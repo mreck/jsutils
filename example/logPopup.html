@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>example | LogPopup</title>
+	<link rel="stylesheet" href="../style/logPopup.css">
+	<style>
+		html,
+		body {
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			background-color: rgb(25, 25, 75);
+		}
+
+		.jsutils-log-popup {
+			width: 450px;
+		}
+	</style>
+</head>
+
+<body>
+	<script src="../dist/index.bundle.js"></script>
+	<script>
+		const { logPopup } = jsutils;
+		const p = logPopup.create('$>');
+		p.print('foo bar');
+		p.print('lorem ipsum', 'bla blubb bla bla');
+		const lorem = 'Lorem ipsum dolor sit amet consectetur adipiscing elit odio ultricies, suspendisse egestas proin luctus cubilia tortor auctor aenean, donec fusce ultrices pharetra laoreet mollis id conubia. Sociis mollis mattis eget aenean nibh porta ornare dictum fermentum nascetur ultricies, tempus aptent placerat cursus netus ligula ante penatibus euismod sagittis. Aenean nunc nibh venenatis tincidunt commodo per nam nisl, suscipit litora rutrum conubia taciti ultricies sociosqu class vitae, imperdiet mi viverra dui purus risus dis.';
+		p.print(lorem);
+		p.print(...lorem.split('. '));
+	</script>
+</body>
+
+</html>

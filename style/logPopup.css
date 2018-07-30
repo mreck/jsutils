@@ -1,0 +1,25 @@
+.jsutils-log-popup {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	width: 300px;
+	border: 1px solid rgb(240, 240, 240);
+	border-radius: 4px;
+	padding: 8px;
+	font-family: monospace;
+	background-color: rgb(25, 25, 25);
+	color: rgb(240, 240, 240);
+}
+
+.jsutils-log-popup-message {
+	margin: 6px;
+}
+
+.jsutils-log-popup-prefix {
+	color: rgb(240, 50, 50);
+	font-weight: bold;
+}
+
+.jsutils-log-popup-prefix::after {
+	content: ' ';
+}
