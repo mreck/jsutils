@@ -4,7 +4,7 @@
 	"author": "Mathias Reck",
 	"license": "MIT",
 	"version": "4.3.1",
-	"main": "lib/index.js",
+	"main": "index.js",
 	"scripts": {
 		"test": "mocha",
 		"test:w": "mocha -w"
