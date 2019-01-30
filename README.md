@@ -23,6 +23,5 @@ So here it is.
 ## TODO
 
 - [ ] Auto generated documentation
-- [ ] Browser-ready bundles
 - [ ] Unit tests for DOM changes
 - [ ] Unit tests for Ajax calls
