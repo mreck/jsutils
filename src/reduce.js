@@ -1,7 +1,7 @@
-const isArray = require('./is').array;
+const is_arr = require('./is_arr');
 
 function reduce(obj, sum, func) {
-	if (isArray(obj)) {
+	if (is_arr(obj)) {
 		for (let i = 0; i < obj.length; i++) {
 			sum = func(sum, obj[i], i);
 		}
