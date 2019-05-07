@@ -9,6 +9,7 @@ min.all = function(vals) {
 			res = vals[i]
 		}
 	}
+	return res;
 }
 
 module.exports = min;
