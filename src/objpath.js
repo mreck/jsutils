@@ -1,7 +1,7 @@
-const isString = require('./is').string;
+const is_str = require('./is_str');
 
 function objpath(obj, path) {
-	if (!obj || !isString(path)) {
+	if (!obj || !is_str(path)) {
 		return null;
 	}
 
