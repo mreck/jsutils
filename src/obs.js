@@ -52,11 +52,4 @@ class Obs {
 	}
 }
 
-function create(val) {
-	return new Obs(val);
-}
-
-module.exports = {
-	create,
-	Obs,
-};
+module.exports = Obs;
