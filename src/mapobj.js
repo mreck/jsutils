@@ -1,4 +1,4 @@
-const isArray = require('./is').array;
+const is_arr = require('./is_arr');
 
 function mapobj(obj, func) {
 	const res = {};
@@ -7,7 +7,7 @@ function mapobj(obj, func) {
 		res[key] = value;
 	};
 
-	if (isArray(obj)) {
+	if (is_arr(obj)) {
 		for (let i = 0; i < obj.length; i++) {
 			func(obj[i], i, push);
 		}
